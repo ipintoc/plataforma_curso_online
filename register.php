@@ -22,15 +22,17 @@
   
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-<style>
+  <!-- IMAGEN DE FONDO -->
+<style> 
 	body{
-background: url("images/fondo27.jpg") no-repeat center center fixed;
+background: url("images/fondo27.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
 	</style>
+  <!-- IMAGEN DE FONDO -->
 </head>
 <body  >
 <div class="login-box">
@@ -39,9 +41,11 @@ background-size: cover;
 	  
   </div>
   <!-- /.login-logo -->
+  <!--  -->
   <div class="login-box-body">
     <p class="login-box-msg">Ingresa los datos requeridos</p>
 
+<!--formulario para registrarse -->
     <form action="course/reg_usuario.php" method="post">
       <div class="form-group has-feedback">
         <input type="text" name="nombre" class="form-control" placeholder="Nombre" pattern="[A-Za-z0-9_-$/ ]{1,15}" required>
@@ -68,7 +72,7 @@ background-size: cover;
           </div>
         <!-- /.col -->
       </div>
-   
+   <!--cierre deformulario para registrarse -->
 
    
   
@@ -85,16 +89,6 @@ background-size: cover;
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js"></script>
 
-
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
-      increaseArea: '20%' /* optional */
-    });
-  });
-</script>
 
 </body>
 </html>

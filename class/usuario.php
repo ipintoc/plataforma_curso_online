@@ -40,6 +40,18 @@ class Usuario extends Conexion{
 		$result= $select->fetch()['total'];
 		return $result;
 	}
+
+	public function login(string $email,string $pass){
+
+		
+		$this->strEmail=$email;
+		$this->strPass=$pass;
+
+		$sql="SELECT nombre FROM usuarios where correo='$email' and clave=MD5('$pass')";
+		$select = $this->conexion->query($sql);
+		$result= $select->fetch()['nombre'];
+		return $result;
+	}
 }
 
 ?>

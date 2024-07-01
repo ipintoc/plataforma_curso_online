@@ -22,6 +22,8 @@
   
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    <!-- IMAGEN DE FONDO -->
 <style>
 	body{
 background: url("images/fondo27.jpg") no-repeat center center fixed;
@@ -41,14 +43,14 @@ background-size: cover;
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Ingresa tus datos para iniciar sesion</p>
-
-    <form action="controller.php" method="post">
+<!--inicio formulario para iniciar sesion -->
+    <form action="course/login.php" method="post">
       <div class="form-group has-feedback">
-        <input type="text" name="usuario" class="form-control" placeholder="Usuario" pattern="[A-Za-z0-9_-$/ ]{1,15}" required>
+        <input type="text" name="mail" class="form-control" placeholder="email" pattern="[A-Za-z0-9_-$/ ]{1,15}" required>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="Contraseña" pattern="[A-Za-z0-9_-$/ ]{1,15}" required>
+        <input type="password" name="pass" class="form-control" placeholder="Contraseña" pattern="[A-Za-z0-9_-$/ ]{1,15}" required>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row" align="center">
@@ -58,6 +60,7 @@ background-size: cover;
           <button type="submit" class="btn btn-primary btn-block btn-flat" >INICIAR</button>
         </div>
          </form>
+         <!--boton para registro usuario -->
          <div class="col-xs-10" align="center" style="float:none">
          </br>
           No estas registrado? - <a href="register.php" > REGISTRATE ACA </a>
@@ -65,7 +68,7 @@ background-size: cover;
         <!-- /.col -->
       </div>
    
-
+<!--cierre formulario para iniciar sesion -->
    
   
   </div>
@@ -81,16 +84,6 @@ background-size: cover;
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js"></script>
 
-
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
-      increaseArea: '20%' /* optional */
-    });
-  });
-</script>
 
 </body>
 </html>

@@ -2,10 +2,10 @@
 
 class Conexion{
 
-	private $host = "localhost";
-	private $user = "root";
-	private $pass = "";
-	private $db = "cursos_online";
+	private $host = "localhost";  //estos datos varian segun el servidor 
+	private $user = "root";       //estos datos varian segun el usuario configurado 
+	private $pass = "";           //estos datos varian segun la clave configurada 
+	private $db = "cursos_online";//estos datos varian segun el nombre de la BD que se asigne
 	private $connect ;
 
 	public function __construct(){
@@ -27,5 +27,5 @@ class Conexion{
 	}
 }
 
-//$conect= new Conexion();
+
 ?>
